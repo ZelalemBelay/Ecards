@@ -1,0 +1,236 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="#FFFDFFED"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lin"
+    android:orientation="vertical">
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_weight="0.27"
+        android:layout_gravity="center">
+
+        <zeelo.ecard.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="ቴሌ ካርድ"
+        android:id="@+id/tvh"
+        android:textStyle="bold"
+        android:textColor="#bae70015"
+        android:layout_gravity="center"
+        android:textSize="@dimen/head_text"
+        android:layout_marginBottom="@dimen/telecard_margin"
+            android:layout_marginTop="@dimen/act" />
+
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/telecard_margin">
+
+        <Button
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:id="@+id/Button47"
+            android:layout_alignBottom="@+id/button"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/fill"
+            android:onClick="f"
+            android:background="@drawable/fill"
+            android:layout_gravity="center" />
+
+        <zeelo.ecard.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="ካርድ መሙያ"
+            android:id="@+id/tvf"
+            android:textStyle="bold"
+            android:textColor="#ba007ae7"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_views_size"
+            android:layout_marginRight="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ba007ae7"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/icons_marl"
+    android:layout_marginRight="@dimen/icons_mar"
+        android:layout_weight="0.55"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.5">
+
+            <Button
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:id="@+id/Button"
+                android:layout_alignBottom="@+id/button"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/transfer"
+                android:layout_marginBottom="2dp"
+                android:onClick="ff"
+                android:background="@drawable/transfer"
+                android:layout_gravity="center" />
+
+            <zeelo.ecard.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="ማስተላለፍ"
+                android:id="@+id/tvs"
+                android:textStyle="bold"
+                android:textColor="#ba007ae7"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_views_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:id="@+id/Button44"
+            android:layout_alignBottom="@+id/button"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ask"
+            android:layout_marginBottom="2dp"
+            android:onClick="r"
+            android:background="@drawable/ask"
+            android:layout_gravity="center" />
+
+        <zeelo.ecard.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="ቀሪ ሂሳብ"
+            android:id="@+id/tvr"
+            android:textStyle="bold"
+            android:textColor="#ba007ae7"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_views_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:id="@+id/Button3"
+            android:layout_alignBottom="@+id/button"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/call_me"
+            android:layout_marginBottom="2dp"
+            android:onClick="c"
+            android:background="@drawable/call_me"
+            android:layout_gravity="center" />
+
+        <zeelo.ecard.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=" ይደውሉልኝ"
+            android:id="@+id/tvc"
+            android:textStyle="bold"
+            android:textColor="#ba007ae7"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_views_size" />
+    </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.67">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:id="@+id/imageView"
+                    android:layout_gravity="center"
+                    android:src="@drawable/network" />
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="ETH - MTN"
+                android:id="@+id/zeelo.ecard.MyTextView3"
+                android:layout_gravity="center"
+                android:textColor="#ba007ae7"
+                    android:textStyle="bold"
+                android:textSize="16dp"
+                    android:layout_marginLeft="6dp" />
+            </LinearLayout>
+
+            <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ba007ae7"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="bottom">
+
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

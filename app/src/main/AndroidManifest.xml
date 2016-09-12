@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zeelo.ecard" >
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tele"
+        android:label="@string/app_name"
+        android:theme="@style/TransparentTheme" >
+
+        <activity
+            android:name="activities.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <service android:name="widget.NotService" />
+
+        <receiver android:name="widget.MyWidgetProvider" android:label="TeleCard">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+
+        </receiver>
+
+        <activity android:name="activities.CallMeActivity" android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar"/>
+        <activity android:name="activities.FillForActivity" android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar"/>
+        <activity android:name="activities.FillActivity" android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar"/>
+
+    </application>
+
+</manifest>

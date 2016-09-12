@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/gr"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="#ba007ae7"
+        android:paddingTop="3dp"
+        android:id="@+id/tel_lin">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView2"
+            android:layout_gravity="right"
+            android:src="@drawable/tele" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Tele Card"
+            android:id="@+id/textView4"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5" >
+
+            <Button
+                style="@style/icon_style"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:id="@+id/buttonF"
+                android:layout_alignBottom="@+id/button"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/fill"
+                android:onClick="f"
+                android:background="@drawable/fill"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Recharge"
+                android:id="@+id/textViewF"
+                android:textStyle="bold"
+                android:textColor="#ba007ae7"
+                android:layout_gravity="center_horizontal"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5" >
+
+            <Button
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:id="@+id/buttonR"
+                android:layout_alignBottom="@+id/button"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ask"
+                android:onClick="r"
+                android:background="@drawable/ask"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Balance?"
+                android:id="@+id/textViewR"
+                android:textStyle="bold"
+                android:textColor="#ba007ae7"
+                android:layout_gravity="center_horizontal"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5" >
+
+            <Button
+                style="@style/icon_style"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:id="@+id/buttonT"
+                android:layout_alignBottom="@+id/button"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/transfer"
+                android:onClick="ff"
+                android:background="@drawable/transfer"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Transfer    "
+                android:id="@+id/textViewT"
+                android:textStyle="bold"
+                android:textColor="#ba007ae7"
+                android:layout_gravity="center_horizontal"
+                android:textSize="14dp"
+                android:typeface="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5" >
+
+            <Button
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:id="@+id/buttonC"
+                android:layout_alignBottom="@+id/button"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/call_me"
+                android:onClick="c"
+                android:background="@drawable/call_me"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Call me Back"
+                android:id="@+id/textViewC"
+                android:textStyle="bold"
+                android:textColor="#ba007ae7"
+                android:layout_gravity="center_horizontal"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ba007ae7"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp" />
+
+</LinearLayout>
